@@ -16,3 +16,7 @@ class Smoothie {
 }
 
 }
+document.getElementById("orderBtn").addEventListener("click", function () {
+    console.log("Button clicked");
+});
+
