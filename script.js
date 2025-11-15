@@ -13,7 +13,23 @@ class Smoothie {
         <strong>Ingredients:</strong> ${this.ingredients.join(", ")} <br>
         <strong>Sweetness:</strong> ${this.sweetness}
     `;
+
+    
 }
+
+
+calculatePrice() {
+    let basePrice = 0;
+
+    if (this.size === "Small") basePrice = 4;
+    if (this.size === "Medium") basePrice = 5;
+    if (this.size === "Large") basePrice = 6;
+
+    let ingredientCost = this.ingredients.length * 1;
+
+    return basePrice + ingredientCost;
+}
+
 
 }
 document.getElementById("orderBtn").addEventListener("click", function () {
