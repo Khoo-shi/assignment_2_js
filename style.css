@@ -64,3 +64,14 @@ input, select {
     line-height: 1.6;
 }
 
+#smoothieImageContainer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#smoothieImage {
+    display: none;
+    margin-top: 10px;
+}
+
+

@@ -62,9 +62,29 @@ const smoothie = new Smoothie(name, size, ingredients, sweetness);
 
 console.log("Smoothie object created", smoothie);
 
-document.getElementById("output").innerHTML = smoothie.describe();
+document.getElementById("output").innerHTML = smoothie.describe()+ "<br><strong>Total Price:</strong> $" + smoothie.calculatePrice();
 
 document.getElementById("smoothieForm").reset();
+
+
+
+let imagePath = "";
+
+if (ingredients.includes("Banana")) imagePath = "images/banana.png";
+else if (ingredients.includes("Strawberry")) imagePath = "images/strawberry.png";
+else if (ingredients.includes("Mango")) imagePath = "images/mango.png";
+else if (ingredients.includes("Blueberry")) imagePath = "images/blueberry.png";
+else if (ingredients.includes("Spinach")) imagePath = "images/spinach.png";
+
+const img = document.getElementById("smoothieImage");
+
+if (imagePath !== "") {
+    img.src = imagePath;
+    img.style.display = "block";
+} else {
+    img.style.display = "none";
+}
+
 
 
 });
