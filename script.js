@@ -17,6 +17,12 @@ class Smoothie {
 
 }
 document.getElementById("orderBtn").addEventListener("click", function () {
-    console.log("Button clicked");
+
+    const name = document.getElementById("customerName").value;
+    const size = document.getElementById("size").value;
+
+    console.log("Name and size collected");
 });
+
+
 
