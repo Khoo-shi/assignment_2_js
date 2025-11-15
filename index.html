@@ -19,17 +19,33 @@
     <option value="Large">Large</option>
 </select><br><br>
 
-<label>Choose Ingredients:</label><br>
-<input type="checkbox" value="Banana"> Banana<br>
-<input type="checkbox" value="Strawberry"> Strawberry<br>
-<input type="checkbox" value="Mango"> Mango<br>
-<input type="checkbox" value="Blueberry"> Blueberry<br>
-<input type="checkbox" value="Spinach"> Spinach<br><br>
+<label>Choose Ingredients:</label>
+<div class="option-row">
+    <input type="checkbox" value="Banana"> <label>Banana</label>
+</div>
+<div class="option-row">
+    <input type="checkbox" value="Strawberry"> <label>Strawberry</label>
+</div>
+<div class="option-row">
+    <input type="checkbox" value="Mango"> <label>Mango</label>
+</div>
+<div class="option-row">
+    <input type="checkbox" value="Blueberry"> <label>Blueberry</label>
+</div>
+<div class="option-row">
+    <input type="checkbox" value="Spinach"> <label>Spinach</label>
+</div>
 
-<label>Sweetness Level:</label><br>
-<input type="radio" name="sweetness" value="No Sugar" checked>No Sugar<br>
-<input type="radio" name="sweetness" value="Less Sweet">Less Sweet<br>
-<input type="radio" name="sweetness" value="Normal Sweet">Normal Sweet<br><br>
+<label>Sweetness Level:</label>
+<div class="option-row">
+    <input type="radio" name="sweetness" value="No Sugar" checked> <label>No Sugar</label>
+</div>
+<div class="option-row">
+    <input type="radio" name="sweetness" value="Less Sweet"> <label>Less Sweet</label>
+</div>
+<div class="option-row">
+    <input type="radio" name="sweetness" value="Normal Sweet"> <label>Normal Sweet</label>
+</div>
 
 <button type="button" id="orderBtn">Order Smoothie</button>
 
@@ -38,7 +54,12 @@
 </form>
 
 <h2>Your Order Summary:</h2>
-<div id="output"></div>
+
+<div id="previewCard">
+    <div id="output"></div>
+    <img id="smoothieImage" src="" alt="">
+</div>
+
 
 <div id="smoothieImageContainer">
     <img id="smoothieImage" src="" alt="" width="200">
