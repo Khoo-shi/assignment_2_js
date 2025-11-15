@@ -92,3 +92,12 @@ document.getElementById("orderBtn").addEventListener("click", function () {
     // Reset form AFTER output and image load
     document.getElementById("smoothieForm").reset();
 });
+
+
+/* 
+Attributions:
+- Fruit images used in the application were sourced from royalty-free image collections.
+- Code structure and concepts for JavaScript classes inspired by course lectures and MDN Web Docs.
+- Styling ideas based on examples from W3Schools and general UI design patterns.
+*/
+
