@@ -18,6 +18,12 @@ class Smoothie {
 }
 document.getElementById("orderBtn").addEventListener("click", function () {
 
+    if (document.getElementById("customerName").value.trim() === "") {
+    document.getElementById("output").innerHTML = "<p style='color:red;'>Please enter your name.</p>";
+    return;
+}
+
+
     const name = document.getElementById("customerName").value;
     const size = document.getElementById("size").value;
 
@@ -40,10 +46,14 @@ const smoothie = new Smoothie(name, size, ingredients, sweetness);
 
 console.log("Smoothie object created", smoothie);
 
+document.getElementById("output").innerHTML = smoothie.describe();
+
+document.getElementById("smoothieForm").reset();
+
 
 });
 
-document.getElementById("output").innerHTML = smoothie.describe();
+
 
 
 
