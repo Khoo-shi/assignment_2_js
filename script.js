@@ -22,7 +22,29 @@ document.getElementById("orderBtn").addEventListener("click", function () {
     const size = document.getElementById("size").value;
 
     console.log("Name and size collected");
+
+    const ingredientBoxes = document.querySelectorAll('input[type="checkbox"]:checked');
+let ingredients = [];
+
+ingredientBoxes.forEach(item => ingredients.push(item.value));
+
+console.log("Ingredients collected");
+
+
+const sweetness = document.querySelector('input[name="sweetness"]:checked').value;
+
+console.log("Sweetness collected");
+
+
+const smoothie = new Smoothie(name, size, ingredients, sweetness);
+
+console.log("Smoothie object created", smoothie);
+
+
 });
+
+document.getElementById("output").innerHTML = smoothie.describe();
+
 
 
 
