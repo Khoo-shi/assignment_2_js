@@ -1,6 +1,4 @@
-/* ----------------------------------------------------
-   GLOBAL STYLING
----------------------------------------------------- */
+/* Global Styling */
 body {
     font-family: "Poppins", Arial, sans-serif;
     background: linear-gradient(135deg, #ffdde1, #fdf2e9);
@@ -15,9 +13,7 @@ body {
     box-sizing: border-box;
 }
 
-/* ----------------------------------------------------
-   FORM CARD
----------------------------------------------------- */
+/* Form card */
 form {
     background: #ffffff;
     padding: 28px 24px;
@@ -39,9 +35,7 @@ form:hover {
         0 10px 25px rgba(255, 120, 120, 0.28);
 }
 
-/* ----------------------------------------------------
-   HEADINGS
----------------------------------------------------- */
+/* Headings */
 h1, h2 {
     color: #333;
     text-align: center;
@@ -50,9 +44,7 @@ h1, h2 {
     font-weight: 600;
 }
 
-/* ----------------------------------------------------
-   INPUTS AND LABELS
----------------------------------------------------- */
+/* Inputs and Labels */
 label {
     font-weight: 600;
     margin-top: 13px;
@@ -98,9 +90,7 @@ input:focus, select:focus {
     transform: scale(1.2);
 }
 
-/* ----------------------------------------------------
-   BUTTON
----------------------------------------------------- */
+/* Button */
 button {
     background: #ff7a7a;
     color: white;
@@ -120,9 +110,7 @@ button:hover {
     transform: translateY(-2px);
 }
 
-/* ----------------------------------------------------
-   OUTPUT BOX (styled as premium card)
----------------------------------------------------- */
+/* Output Box */
 #output {
     margin-top: 24px;
     background: #ffffff;
@@ -140,9 +128,7 @@ button:hover {
     box-sizing: border-box;
 }
 
-/* ----------------------------------------------------
-   LIVE PREVIEW CARD
----------------------------------------------------- */
+/* Live Preview Card */
 #previewCard {
     background: #ffffff;
     border-radius: 20px;
@@ -167,9 +153,7 @@ button:hover {
     border-radius: 14px;
 }
 
-/* ----------------------------------------------------
-   SMOOTHIE IMAGE (main display)
----------------------------------------------------- */
+/* Smoothie image */
 #smoothieImageContainer {
     margin-top: 20px;
     text-align: center;
@@ -183,9 +167,7 @@ button:hover {
     transition: 0.3s ease;
 }
 
-/* ----------------------------------------------------
-   ANIMATION
----------------------------------------------------- */
+/* Animation*/
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(6px); }
     to { opacity: 1; transform: translateY(0); }
